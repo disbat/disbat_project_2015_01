@@ -27,4 +27,4 @@ private:
     Ui::Dialog1 *ui;
 };
 
-#endif // DIALOG1_Hhhhh123
+#endif // DIALOG1_H
