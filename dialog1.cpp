@@ -27,10 +27,10 @@ void Dialog1::changeEvent(QEvent *e)
 
 void Dialog1::on_buttonRed_clicked()
 {
-    ui->label->setStyleSheet("QLabel { color: red; }");
+    ui->label->setStyleSheet("QLabel { font-size: 6px }");
 }
 
 void Dialog1::on_buttonBlue_clicked()
 {
-    ui->label->setStyleSheet("QLabel { color: blue; }");
+    ui->label->setStyleSheet("QLabel { font-size: 26px }");
 }

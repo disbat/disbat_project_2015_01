@@ -16,6 +16,9 @@
   <property name="windowTitle">
    <string>Dialog 1. Example.</string>
   </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
   <property name="modal">
    <bool>true</bool>
   </property>
@@ -36,7 +39,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Example text. Change its color using buttons below.</string>
+      <string>Example text. Change its size using buttons below.</string>
      </property>
      <property name="textFormat">
       <enum>Qt::PlainText</enum>
@@ -54,14 +57,14 @@
      <item>
       <widget class="QPushButton" name="buttonRed">
        <property name="text">
-        <string>Red</string>
+        <string>little</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="buttonBlue">
        <property name="text">
-        <string>Blue</string>
+        <string>Big</string>
        </property>
       </widget>
      </item>
