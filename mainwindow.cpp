@@ -6,6 +6,7 @@
 #include <QSpacerItem>
 
 #include "dialog1.h"
+#include "dialog2.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -21,8 +22,13 @@ MainWindow::MainWindow(QWidget *parent) :
     layout->addWidget(buttonDialog1);
     connect(buttonDialog1, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog1_clicked()));
 
-    layout->addSpacerItem(new QSpacerItem(10, 10, QSizePolicy::Maximum, QSizePolicy::Expanding));
+   //Dialog 2.
+    QPushButton *buttonDialog2 = new QPushButton(this);
+    buttonDialog2->setText(tr("Dialog 2."));
+    layout->addWidget(buttonDialog2);
+    connect(buttonDialog2, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog2_clicked()));
 
+    layout->addSpacerItem(new QSpacerItem(10, 10, QSizePolicy::Maximum, QSizePolicy::Expanding));
     ui->centralWidget->setLayout(layout);
 }
 
@@ -47,4 +53,10 @@ void MainWindow::on_buttonDialog1_clicked()
 {
     Dialog1 *dialog = new Dialog1(this);
     dialog->exec();
+}
+
+void MainWindow::on_buttonDialog2_clicked()
+{
+   Dialog2 *dialog2 = new Dialog2(this);
+   dialog2->exec();
 }
