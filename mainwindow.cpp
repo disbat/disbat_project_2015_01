@@ -31,7 +31,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(buttonDialog2, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog2_clicked()));
     //Dialog 4.
     QPushButton *buttonDialog4 = new QPushButton(this);
-    buttonDialog4->setText(tr("Maryana Balyura #4"));
+    buttonDialog4->setText(tr("Maryana Smirnova #4"));
     layout->addWidget(buttonDialog4);
     connect(buttonDialog4, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog4_clicked()));
 

@@ -78,13 +78,6 @@
     </widget>
    </item>
    <item>
-    <widget class="QPushButton" name="pushButton_2">
-     <property name="text">
-      <string>PushButton</string>
-     </property>
-    </widget>
-   </item>
-   <item>
     <widget class="QLineEdit" name="lineEdit_4">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -102,7 +95,6 @@
   <zorder>label_2</zorder>
   <zorder>pushButton</zorder>
   <zorder>lineEdit_4</zorder>
-  <zorder>pushButton_2</zorder>
  </widget>
  <resources/>
  <connections/>
