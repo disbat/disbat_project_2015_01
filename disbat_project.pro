@@ -17,17 +17,29 @@ SOURCES += main.cpp\
     dialog1.cpp \
     dialog2.cpp \
     dialog5.cpp \
+<<<<<<< HEAD
     dialog6.cpp
+=======
+    dialog4.cpp
+>>>>>>> origin/master
 
 HEADERS  += mainwindow.h \
     dialog1.h \
     dialog2.h \
     dialog5.h \
+<<<<<<< HEAD
     dialog6.h
+=======
+    dialog4.h
+>>>>>>> origin/master
 
 FORMS    += mainwindow.ui \
     dialog1.ui \
     dialog2.ui \
     dialog5.ui \
+<<<<<<< HEAD
     dialog6.ui
+=======
+    dialog4.ui
+>>>>>>> origin/master
 
