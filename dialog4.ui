@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog2</class>
- <widget class="QDialog" name="Dialog2">
+ <class>Dialog4</class>
+ <widget class="QDialog" name="Dialog4">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -27,7 +27,7 @@
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QLineEdit" name="lineEdit">
+      <widget class="QLineEdit" name="lineEdit_1">
        <property name="inputMethodHints">
         <set>Qt::ImhDigitsOnly</set>
        </property>
@@ -40,7 +40,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit_2">
+      <widget class="QLineEdit" name="lineEdit_3">
        <property name="inputMethodHints">
         <set>Qt::ImhDigitsOnly</set>
        </property>
@@ -63,7 +63,7 @@
       </sizepolicy>
      </property>
      <property name="text">
-      <string>Додати числа:</string>
+      <string>Помножити числа:</string>
      </property>
     </widget>
    </item>
@@ -78,7 +78,14 @@
     </widget>
    </item>
    <item>
-    <widget class="QLineEdit" name="lineEdit_3">
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_4">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
        <horstretch>0</horstretch>
@@ -94,7 +101,8 @@
   <zorder>label</zorder>
   <zorder>label_2</zorder>
   <zorder>pushButton</zorder>
-  <zorder>lineEdit_3</zorder>
+  <zorder>lineEdit_4</zorder>
+  <zorder>pushButton_2</zorder>
  </widget>
  <resources/>
  <connections/>
