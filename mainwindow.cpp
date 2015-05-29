@@ -24,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
    //Dialog 2.
     QPushButton *buttonDialog2 = new QPushButton(this);
-    buttonDialog2->setText(tr("Dialog 2.Семко Евгеній  #2 make doc"));
+    buttonDialog2->setText(tr("Dialog 2."));
     layout->addWidget(buttonDialog2);
     connect(buttonDialog2, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog2_clicked()));
 
