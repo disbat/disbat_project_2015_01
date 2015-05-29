@@ -17,17 +17,20 @@ SOURCES += main.cpp\
     dialog1.cpp \
     dialog2.cpp \
     dialog5.cpp \
-    dialog4.cpp
+    dialog4.cpp \
+    dialog10.cpp
 
 HEADERS  += mainwindow.h \
     dialog1.h \
     dialog2.h \
     dialog5.h \
-    dialog4.h
+    dialog4.h \
+    dialog10.h
 
 FORMS    += mainwindow.ui \
     dialog1.ui \
     dialog2.ui \
     dialog5.ui \
-    dialog4.ui
+    dialog4.ui \
+    dialog10.ui
 
