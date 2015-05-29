@@ -23,7 +23,19 @@ private:
 
 private slots:
     void on_buttonDialog1_clicked();
+    void on_buttonDialog2_clicked();
+    void on_buttonDialog4_clicked();
+    void on_buttonDialog5_clicked();
+<<<<<<< HEAD
+<<<<<<< HEAD
     void on_buttonDialog6_clicked();
+=======
+
+
+>>>>>>> origin/master
+=======
+    void on_buttonDialog10_clicked();
+>>>>>>> 8182197c737ae6a2833a200d3eeb852fff34ae46
 };
 
 #endif // MAINWINDOW_H
