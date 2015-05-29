@@ -7,6 +7,7 @@
 
 #include "dialog1.h"
 #include "dialog2.h"
+#include "dialog5.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -27,6 +28,12 @@ MainWindow::MainWindow(QWidget *parent) :
     buttonDialog2->setText(tr("Dialog 2.Семко Евгеній  #2 make doc"));
     layout->addWidget(buttonDialog2);
     connect(buttonDialog2, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog2_clicked()));
+
+    //Dialog 5.
+    QPushButton *buttonDialog5 = new QPushButton(this);
+    buttonDialog5->setText(tr("Dialog 5. Хріпков Ігор"));
+    layout->addWidget(buttonDialog5);
+    connect(buttonDialog5, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog5_clicked()));
 
     layout->addSpacerItem(new QSpacerItem(10, 10, QSizePolicy::Maximum, QSizePolicy::Expanding));
     ui->centralWidget->setLayout(layout);
@@ -59,4 +66,10 @@ void MainWindow::on_buttonDialog2_clicked()
 {
    Dialog2 *dialog2 = new Dialog2(this);
    dialog2->exec();
+}
+
+void MainWindow::on_buttonDialog5_clicked()
+{
+   Dialog5 *dialog5 = new Dialog5(this);
+   dialog5->exec();
 }
