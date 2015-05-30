@@ -11,6 +11,7 @@
 #include "dialog5.h"
 #include "dialog9.h"
 #include "dialog10.h"
+#include "dialog11.h"
 #include "dialog3.h"
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -21,7 +22,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QVBoxLayout *layout = new QVBoxLayout(this);
 
-    // Dialog 1. Example.
+    // Dialog 1.
     QPushButton *buttonDialog1 = new QPushButton(this);
     buttonDialog1->setText(tr("Nosadchuk Roman #6"));
     layout->addWidget(buttonDialog1);
@@ -56,6 +57,12 @@ MainWindow::MainWindow(QWidget *parent) :
     buttonDialog10->setText(tr("Fisun Inna #10"));
     layout->addWidget(buttonDialog10);
     connect(buttonDialog10, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog10_clicked()));
+
+    // Anton Mitrofanov
+    QPushButton *buttonDialog11 = new QPushButton(this);
+    buttonDialog11->setText(tr("Anton Mitrofanov #11"));
+    layout->addWidget(buttonDialog11);
+    connect(buttonDialog11, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog11_clicked()));
 
     // Dialog 3.
     QPushButton *buttonDialog3 = new QPushButton(this);
@@ -118,6 +125,12 @@ void MainWindow::on_buttonDialog10_clicked()
 {
    Dialog10 *dialog10 = new Dialog10(this);
    dialog10->exec();
+}
+
+void MainWindow::on_buttonDialog11_clicked()
+{
+   Dialog11 *dialog11 = new Dialog11(this);
+   dialog11->exec();
 }
 
 void MainWindow::on_buttonDialog3_clicked()
