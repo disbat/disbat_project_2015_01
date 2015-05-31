@@ -32,6 +32,7 @@ private slots:
     void on_buttonDialog11_clicked();
     void on_buttonDialog3_clicked();
     void on_buttonDialog8_clicked();
+    void on_buttonDialog7_clicked();
 };
 
 #endif // MAINWINDOW_H
