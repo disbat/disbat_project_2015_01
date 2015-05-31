@@ -21,8 +21,8 @@ SOURCES += main.cpp\
     dialog10.cpp \
     dialog9.cpp \
     dialog3.cpp \
-    dialog11.cpp \
-    dialog6.cpp
+    dialog7.cpp \
+    dialog8.cpp
 
 HEADERS  += mainwindow.h \
     dialog1.h \
@@ -32,8 +32,8 @@ HEADERS  += mainwindow.h \
     dialog10.h \
     dialog9.h   \
     dialog3.h \
-    dialog11.h \
-    dialog6.h
+    dialog7.h \
+    dialog8.h
 
 FORMS    += mainwindow.ui \
     dialog1.ui \
@@ -43,5 +43,6 @@ FORMS    += mainwindow.ui \
     dialog10.ui \
     dialog9.ui  \
     dialog3.ui \
-    dialog11.ui \
-    dialog6.ui
+    dialog7.ui \
+    dialog8.ui
+
