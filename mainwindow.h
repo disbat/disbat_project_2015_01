@@ -26,6 +26,7 @@ private slots:
     void on_buttonDialog2_clicked();
     void on_buttonDialog4_clicked();
     void on_buttonDialog5_clicked();
+    void on_buttonDialog6_clicked();
     void on_buttonDialog9_clicked();
     void on_buttonDialog10_clicked();
     void on_buttonDialog11_clicked();

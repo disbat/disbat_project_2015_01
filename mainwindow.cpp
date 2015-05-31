@@ -13,6 +13,7 @@
 #include "dialog10.h"
 #include "dialog11.h"
 #include "dialog3.h"
+#include "dialog6.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -45,6 +46,12 @@ MainWindow::MainWindow(QWidget *parent) :
     buttonDialog5->setText(tr("Dialog 5. Хріпков Ігор"));
     layout->addWidget(buttonDialog5);
     connect(buttonDialog5, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog5_clicked()));
+
+    //Dialog 6.
+    QPushButton *buttonDialog6 = new QPushButton(this);
+    buttonDialog6->setText(tr("Dialog 6. Nosadchuk Roman"));
+    layout->addWidget(buttonDialog6);
+    connect(buttonDialog6, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog6_clicked()));
 
     //Dialog 9.
     QPushButton *buttonDialog9 = new QPushButton(this);
@@ -113,6 +120,12 @@ void MainWindow::on_buttonDialog5_clicked()
 {
    Dialog5 *dialog5 = new Dialog5(this);
    dialog5->exec();
+}
+
+void MainWindow::on_buttonDialog6_clicked()
+{
+   Dialog6 *dialog6 = new Dialog6(this);
+   dialog6->exec();
 }
 
 void MainWindow::on_buttonDialog9_clicked()
