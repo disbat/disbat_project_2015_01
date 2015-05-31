@@ -35,6 +35,12 @@ MainWindow::MainWindow(QWidget *parent) :
     layout->addWidget(buttonDialog2);
     connect(buttonDialog2, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog2_clicked()));
 
+    // Dialog 3.
+    QPushButton *buttonDialog3 = new QPushButton(this);
+    buttonDialog3->setText(tr("Sergii Melnyk #3"));
+    layout->addWidget(buttonDialog3);
+    connect(buttonDialog3, SIGNAL(clicked()), this, SLOT(on_buttonDialog3_clicked()));
+
     //Dialog 4.
     QPushButton *buttonDialog4 = new QPushButton(this);
     buttonDialog4->setText(tr("Maryana Smirnova #4"));
@@ -43,7 +49,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //Dialog 5.
     QPushButton *buttonDialog5 = new QPushButton(this);
-    buttonDialog5->setText(tr("Dialog 5. Хріпков Ігор"));
+    buttonDialog5->setText(tr("Dialog 5. Hripkov Igor"));
     layout->addWidget(buttonDialog5);
     connect(buttonDialog5, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog5_clicked()));
 
@@ -70,12 +76,6 @@ MainWindow::MainWindow(QWidget *parent) :
     buttonDialog11->setText(tr("Anton Mitrofanov #11"));
     layout->addWidget(buttonDialog11);
     connect(buttonDialog11, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog11_clicked()));
-
-    // Dialog 3.
-    QPushButton *buttonDialog3 = new QPushButton(this);
-    buttonDialog3->setText(tr("Sergii Melnyk #3"));
-    layout->addWidget(buttonDialog3);
-    connect(buttonDialog3, SIGNAL(clicked()), this, SLOT(on_buttonDialog3_clicked()));
 
     layout->addSpacerItem(new QSpacerItem(10, 10, QSizePolicy::Maximum, QSizePolicy::Expanding));
     ui->centralWidget->setLayout(layout);
