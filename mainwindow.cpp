@@ -14,6 +14,7 @@
 #include "dialog11.h"
 #include "dialog3.h"
 #include "dialog6.h"
+#include "dialog8.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -76,6 +77,12 @@ MainWindow::MainWindow(QWidget *parent) :
     buttonDialog11->setText(tr("Anton Mitrofanov #11"));
     layout->addWidget(buttonDialog11);
     connect(buttonDialog11, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog11_clicked()));
+
+    //Dialog 8.
+    QPushButton *buttonDialog8 = new QPushButton(this);
+    buttonDialog8->setText(QString::fromUtf8("Dialog 8. Евгений Деркач"));
+    layout->addWidget(buttonDialog8);
+    connect(buttonDialog8, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog8_clicked()));
 
     layout->addSpacerItem(new QSpacerItem(10, 10, QSizePolicy::Maximum, QSizePolicy::Expanding));
     ui->centralWidget->setLayout(layout);
@@ -150,4 +157,10 @@ void MainWindow::on_buttonDialog3_clicked()
 {
     Dialog3 *dialog = new Dialog3(this);
     dialog->exec();
+}
+
+void MainWindow::on_buttonDialog8_clicked()
+{
+   Dialog8 *dialog8 = new Dialog8(this);
+   dialog8->exec();
 }
