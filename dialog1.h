@@ -19,7 +19,6 @@ protected:
     void changeEvent(QEvent *e);
 
 private slots:
-
     void on_buttonRed_clicked();
 
     void on_buttonBlue_clicked();
