@@ -61,6 +61,18 @@ MainWindow::MainWindow(QWidget *parent) :
     layout->addWidget(buttonDialog6);
     connect(buttonDialog6, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog6_clicked()));
 
+    //Dialog 7.
+    QPushButton *buttonDialog7 = new QPushButton(this);
+    buttonDialog7->setText(QString::fromUtf8("Dialog 7. Сергей ✔ Быченко"));
+    layout->addWidget(buttonDialog7);
+    connect(buttonDialog7, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog7_clicked()));
+
+    //Dialog 8.
+    QPushButton *buttonDialog8 = new QPushButton(this);
+    buttonDialog8->setText(QString::fromUtf8("Dialog 8. Евгений Деркач"));
+    layout->addWidget(buttonDialog8);
+    connect(buttonDialog8, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog8_clicked()));
+
     //Dialog 9.
     QPushButton *buttonDialog9 = new QPushButton(this);
     buttonDialog9->setText(tr("Marina Skrivanik #9"));
@@ -78,18 +90,6 @@ MainWindow::MainWindow(QWidget *parent) :
     buttonDialog11->setText(tr("Anton Mitrofanov #11"));
     layout->addWidget(buttonDialog11);
     connect(buttonDialog11, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog11_clicked()));
-
-    //Dialog 8.
-    QPushButton *buttonDialog8 = new QPushButton(this);
-    buttonDialog8->setText(QString::fromUtf8("Dialog 8. Евгений Деркач"));
-    layout->addWidget(buttonDialog8);
-    connect(buttonDialog8, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog8_clicked()));
-
-    //Dialog 7.
-    QPushButton *buttonDialog7 = new QPushButton(this);
-    buttonDialog7->setText(QString::fromUtf8("Dialog 7. Сергей ✔ Быченко"));
-    layout->addWidget(buttonDialog7);
-    connect(buttonDialog7, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog7_clicked()));
 
     layout->addSpacerItem(new QSpacerItem(10, 10, QSizePolicy::Maximum, QSizePolicy::Expanding));
     ui->centralWidget->setLayout(layout);
