@@ -18,6 +18,7 @@ SOURCES += main.cpp\
     dialog2.cpp \
     dialog5.cpp \
     dialog4.cpp \
+    dialog13.cpp\
     dialog10.cpp \
     dialog9.cpp \
     dialog3.cpp \
@@ -26,22 +27,26 @@ SOURCES += main.cpp\
     dialog8.cpp \
     dialog7.cpp
 
+
 HEADERS  += mainwindow.h \
     dialog1.h \
     dialog2.h \
     dialog5.h \
     dialog4.h \
+    dialog13.h \
     dialog10.h \
     dialog9.h   \
     dialog3.h \
     dialog11.h \
     dialog6.h \
     dialog8.h \
-    dialog7.h
+    dialog7.h \
+    dialog13.h
 
 FORMS    += mainwindow.ui \
     dialog1.ui \
     dialog2.ui \
+    dialog13.ui \
     dialog5.ui \
     dialog4.ui \
     dialog10.ui \
@@ -50,4 +55,5 @@ FORMS    += mainwindow.ui \
     dialog11.ui \
     dialog6.ui  \
     dialog8.ui \
-    dialog7.ui
+    dialog7.ui \
+    dialog13.ui

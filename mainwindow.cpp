@@ -6,6 +6,7 @@
 #include <QSpacerItem>
 
 #include "dialog1.h"
+#include "dialog13.h"
 #include "dialog2.h"
 #include "dialog4.h"
 #include "dialog5.h"
@@ -176,4 +177,9 @@ void MainWindow::on_buttonDialog7_clicked()
 {
    Dialog7 *dialog7 = new Dialog7(this);
    dialog7->exec();
+}
+void MainWindow::on_buttonDialog13_clicked()
+{
+   Dialog13 *dialog13 = new Dialog13(this);
+   dialog13->exec();
 }
