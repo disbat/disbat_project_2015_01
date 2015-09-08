@@ -92,6 +92,11 @@ MainWindow::MainWindow(QWidget *parent) :
     layout->addWidget(buttonDialog11);
     connect(buttonDialog11, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog11_clicked()));
 
+    QPushButton *buttonDialog13 = new QPushButton(this);
+    buttonDialog13->setText(tr("#13"));
+    layout->addWidget(buttonDialog13);
+    connect(buttonDialog13, SIGNAL(clicked(bool)), this, SLOT(on_buttonDialog13_clicked()));
+
     layout->addSpacerItem(new QSpacerItem(10, 10, QSizePolicy::Maximum, QSizePolicy::Expanding));
     ui->centralWidget->setLayout(layout);
 }
