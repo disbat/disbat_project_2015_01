@@ -183,8 +183,10 @@ void MainWindow::on_buttonDialog7_clicked()
    Dialog7 *dialog7 = new Dialog7(this);
    dialog7->exec();
 }
+
 void MainWindow::on_buttonDialog13_clicked()
 {
-   Dialog13 *dialog13 = new Dialog13(this);
-   dialog13->exec();
+    Dialog13 *dialog13 = new Dialog13(this);
+    dialog13->exec();
 }
+

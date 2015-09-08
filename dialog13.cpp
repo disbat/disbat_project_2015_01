@@ -59,3 +59,4 @@ void Dialog13::on_pushButton_9_clicked()
 {
     ui->pushButton_9->hide();
 }
+

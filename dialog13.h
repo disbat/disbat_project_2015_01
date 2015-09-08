@@ -34,7 +34,6 @@ private slots:
 
     void on_pushButton_9_clicked();
 
-
 private:
     Ui::Dialog13 *ui;
 };
